@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">162.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">tests.BaseClass<td><a href="#m1"><b>VerifyProfileTitle</b>  </a></td><td class="numi">1</td><td class="numi">9590</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">tests.BaseClass<td><a href="#m2"><b>VerifyHomeTitle</b>  </a></td><td class="numi">1</td><td class="numi">13058</td></tr><tr class="passedodd"><td><a href="#m3"><b>VerifyOpenDrawer</b>  </a></td><td class="numi">1</td><td class="numi">3063</td></tr>
+</table>
+<h1>Default test</h1>
+<a id="m1"></a><h2>tests.BaseClass:VerifyProfileTitle</h2>
+<div style="padding-left:3em">
+<p>An unknown server-side error occurred while processing the command. Original error: io.appium.uiautomator2.common.exceptions.UiAutomator2Exception: java.lang.IllegalArgumentException: Namespace with prefix &apos;pegasus.driver&apos; has not been declared.
+	at io.appium.uiautomator2.core.AccessibilityNodeInfoDumper.findNodes(AccessibilityNodeInfoDumper.java:237)
+	at io.appium.uiautomator2.utils.ElementLocationHelpers.getXPathNodeMatch(ElementLocationHelpers.java:71)
+	at io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:104)
+	at io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:75)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:37)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:243)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:761)
+Caused by: java.lang.IllegalArgumentException: Namespace with prefix &apos;pegasus.driver&apos; has not been declared.
+	at org.jdom2.xpath.util.AbstractXPathCompiled.getNamespace(AbstractXPathCompiled.java:256)
+	at org.jdom2.xpath.jaxen.JaxenCompiled.translateNamespacePrefixToUri(JaxenCompiled.java:171)
+	at org.jaxen.ContextSupport.translateNamespacePrefixToUri(ContextSupport.java:190)
+	at org.jaxen.expr.DefaultNameStep.matches(DefaultNameStep.java:356)
+	at org.jaxen.expr.DefaultNameStep.evaluate(DefaultNameStep.java:209)
+	at org.jaxen.expr.DefaultLocationPath.evaluate(DefaultLocationPath.java:140)
+	at org.jaxen.expr.DefaultPathExpr.evaluate(DefaultPathExpr.java:137)
+	at org.jaxen.expr.DefaultXPathExpr.asList(DefaultXPathExpr.java:102)
+	at org.jaxen.BaseXPath.selectNodesForContext(BaseXPath.java:677)
+	at org.jaxen.BaseXPath.selectNodes(BaseXPath.java:216)
+	at org.jdom2.xpath.jaxen.JaxenCompiled.evaluateRawAll(JaxenCompiled.java:198)
+	at org.jdom2.xpath.util.AbstractXPathCompiled.evaluate(AbstractXPathCompiled.java:356)
+	at io.appium.uiautomator2.core.AccessibilityNodeInfoDumper.findNodes(AccessibilityNodeInfoDumper.java:218)
+	... 33 more
+ (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8.77 seconds
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;CISM-I-420&apos;, ip: &apos;192.168.55.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=pegasus.driver, statBarHeight=48, noReset=false, viewportRect={top=48, left=0, width=1200, height=1776}, deviceName=emulator-5554, platform=LINUX, deviceUDID=emulator-5554, desired={appPackage=pegasus.driver, appActivity=pegasus.driver.mvvm.auth.AuthActivity, browser_name=Chrome, noReset=false, newCommandTimeout=10000, platformVersion=7.0, automationName=UiAutomator2, autoDismissAlerts=true, autoGrantPermissions=true, udid=emulator-5554, platformName=Android, deviceName=My Phone}, newCommandTimeout=10000, platformVersion=7.0, webStorageEnabled=false, automationName=UiAutomator2, takesScreenshot=true, javascriptEnabled=true, udid=emulator-5554, platformName=Android, deviceApiLevel=24, deviceManufacturer=unknown, deviceScreenSize=1200x1920, networkConnectionEnabled=true, warnings={}, autoDismissAlerts=true, databaseEnabled=false, appActivity=pegasus.driver.mvvm.auth.AuthActivity, browser_name=Chrome, pixelRatio=2, locationContextEnabled=false, autoGrantPermissions=true, deviceScreenDensity=320, deviceModel=Android SDK built for arm64}]
+Session ID: 92f08f95-98af-4203-8369-fee205e84061
+*** Element info: {Using=xpath, value=pegasus.driver:id/tvMenuTitle}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:99)
+<br/>at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at tests.BaseClass.VerifyProfileTitle(BaseClass.java:177)
+<br/>26 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>tests.BaseClass:VerifyHomeTitle</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>tests.BaseClass:VerifyOpenDrawer</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

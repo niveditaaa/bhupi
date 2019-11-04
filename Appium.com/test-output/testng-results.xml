@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="162316" started-at="2019-11-04T12:34:06Z" finished-at="2019-11-04T12:36:48Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="162316" started-at="2019-11-04T12:34:06Z" finished-at="2019-11-04T12:36:48Z">
+      <class name="tests.BaseClass">
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="469" started-at="2019-11-04T12:34:06Z" finished-at="2019-11-04T12:34:06Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="136549" started-at="2019-11-04T12:34:06Z" finished-at="2019-11-04T12:36:23Z">
+        </test-method>
+        <test-method status="PASS" signature="VerifyHomeTitle()" name="VerifyHomeTitle" duration-ms="13058" started-at="2019-11-04T12:36:23Z" finished-at="2019-11-04T12:36:36Z">
+        </test-method>
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)" name="getResult" is-config="true" duration-ms="14" started-at="2019-11-04T12:36:36Z" finished-at="2019-11-04T12:36:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: VerifyHomeTitle STATUS:SUCCESS METHOD:tests.BaseClass.VerifyHomeTitle()]
+]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="VerifyOpenDrawer()" name="VerifyOpenDrawer" duration-ms="3063" started-at="2019-11-04T12:36:36Z" finished-at="2019-11-04T12:36:39Z">
+        </test-method>
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)" name="getResult" is-config="true" duration-ms="1" started-at="2019-11-04T12:36:39Z" finished-at="2019-11-04T12:36:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: VerifyOpenDrawer STATUS:SUCCESS METHOD:tests.BaseClass.VerifyOpenDrawer()]
+]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="FAIL" signature="VerifyProfileTitle()" name="VerifyProfileTitle" duration-ms="9590" started-at="2019-11-04T12:36:39Z" finished-at="2019-11-04T12:36:48Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: io.appium.uiautomator2.common.exceptions.UiAutomator2Exception: java.lang.IllegalArgumentException: Namespace with prefix 'pegasus.driver' has not been declared.
+	at io.appium.uiautomator2.core.AccessibilityNodeInfoDumper.findNodes(AccessibilityNodeInfoDumper.java:237)
+	at io.appium.uiautomator2.utils.ElementLocationHelpers.getXPathNodeMatch(ElementLocationHelpers.java:71)
+	at io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:104)
+	at io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:75)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:37)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:243)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:761)
+Caused by: java.lang.IllegalArgumentException: Namespace with prefix 'pegasus.driver' has not been declared.
+	at org.jdom2.xpath.util.AbstractXPathCompiled.getNamespace(AbstractXPathCompiled.java:256)
+	at org.jdom2.xpath.jaxen.JaxenCompiled.translateNamespacePrefixToUri(JaxenCompiled.java:171)
+	at org.jaxen.ContextSupport.translateNamespacePrefixToUri(ContextSupport.java:190)
+	at org.jaxen.expr.DefaultNameStep.matches(DefaultNameStep.java:356)
+	at org.jaxen.expr.DefaultNameStep.evaluate(DefaultNameStep.java:209)
+	at org.jaxen.expr.DefaultLocationPath.evaluate(DefaultLocationPath.java:140)
+	at org.jaxen.expr.DefaultPathExpr.evaluate(DefaultPathExpr.java:137)
+	at org.jaxen.expr.DefaultXPathExpr.asList(DefaultXPathExpr.java:102)
+	at org.jaxen.BaseXPath.selectNodesForContext(BaseXPath.java:677)
+	at org.jaxen.BaseXPath.selectNodes(BaseXPath.java:216)
+	at org.jdom2.xpath.jaxen.JaxenCompiled.evaluateRawAll(JaxenCompiled.java:198)
+	at org.jdom2.xpath.util.AbstractXPathCompiled.evaluate(AbstractXPathCompiled.java:356)
+	at io.appium.uiautomator2.core.AccessibilityNodeInfoDumper.findNodes(AccessibilityNodeInfoDumper.java:218)
+	... 33 more
+ (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8.77 seconds
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'CISM-I-420', ip: '192.168.55.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=pegasus.driver, statBarHeight=48, noReset=false, viewportRect={top=48, left=0, width=1200, height=1776}, deviceName=emulator-5554, platform=LINUX, deviceUDID=emulator-5554, desired={appPackage=pegasus.driver, appActivity=pegasus.driver.mvvm.auth.AuthActivity, browser_name=Chrome, noReset=false, newCommandTimeout=10000, platformVersion=7.0, automationName=UiAutomator2, autoDismissAlerts=true, autoGrantPermissions=true, udid=emulator-5554, platformName=Android, deviceName=My Phone}, newCommandTimeout=10000, platformVersion=7.0, webStorageEnabled=false, automationName=UiAutomator2, takesScreenshot=true, javascriptEnabled=true, udid=emulator-5554, platformName=Android, deviceApiLevel=24, deviceManufacturer=unknown, deviceScreenSize=1200x1920, networkConnectionEnabled=true, warnings={}, autoDismissAlerts=true, databaseEnabled=false, appActivity=pegasus.driver.mvvm.auth.AuthActivity, browser_name=Chrome, pixelRatio=2, locationContextEnabled=false, autoGrantPermissions=true, deviceScreenDensity=320, deviceModel=Android SDK built for arm64}]
+Session ID: 92f08f95-98af-4203-8369-fee205e84061
+*** Element info: {Using=xpath, value=pegasus.driver:id/tvMenuTitle}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: io.appium.uiautomator2.common.exceptions.UiAutomator2Exception: java.lang.IllegalArgumentException: Namespace with prefix 'pegasus.driver' has not been declared.
+	at io.appium.uiautomator2.core.AccessibilityNodeInfoDumper.findNodes(AccessibilityNodeInfoDumper.java:237)
+	at io.appium.uiautomator2.utils.ElementLocationHelpers.getXPathNodeMatch(ElementLocationHelpers.java:71)
+	at io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:104)
+	at io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:75)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:37)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:243)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:761)
+Caused by: java.lang.IllegalArgumentException: Namespace with prefix 'pegasus.driver' has not been declared.
+	at org.jdom2.xpath.util.AbstractXPathCompiled.getNamespace(AbstractXPathCompiled.java:256)
+	at org.jdom2.xpath.jaxen.JaxenCompiled.translateNamespacePrefixToUri(JaxenCompiled.java:171)
+	at org.jaxen.ContextSupport.translateNamespacePrefixToUri(ContextSupport.java:190)
+	at org.jaxen.expr.DefaultNameStep.matches(DefaultNameStep.java:356)
+	at org.jaxen.expr.DefaultNameStep.evaluate(DefaultNameStep.java:209)
+	at org.jaxen.expr.DefaultLocationPath.evaluate(DefaultLocationPath.java:140)
+	at org.jaxen.expr.DefaultPathExpr.evaluate(DefaultPathExpr.java:137)
+	at org.jaxen.expr.DefaultXPathExpr.asList(DefaultXPathExpr.java:102)
+	at org.jaxen.BaseXPath.selectNodesForContext(BaseXPath.java:677)
+	at org.jaxen.BaseXPath.selectNodes(BaseXPath.java:216)
+	at org.jdom2.xpath.jaxen.JaxenCompiled.evaluateRawAll(JaxenCompiled.java:198)
+	at org.jdom2.xpath.util.AbstractXPathCompiled.evaluate(AbstractXPathCompiled.java:356)
+	at io.appium.uiautomator2.core.AccessibilityNodeInfoDumper.findNodes(AccessibilityNodeInfoDumper.java:218)
+	... 33 more
+ (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8.77 seconds
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'CISM-I-420', ip: '192.168.55.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=pegasus.driver, statBarHeight=48, noReset=false, viewportRect={top=48, left=0, width=1200, height=1776}, deviceName=emulator-5554, platform=LINUX, deviceUDID=emulator-5554, desired={appPackage=pegasus.driver, appActivity=pegasus.driver.mvvm.auth.AuthActivity, browser_name=Chrome, noReset=false, newCommandTimeout=10000, platformVersion=7.0, automationName=UiAutomator2, autoDismissAlerts=true, autoGrantPermissions=true, udid=emulator-5554, platformName=Android, deviceName=My Phone}, newCommandTimeout=10000, platformVersion=7.0, webStorageEnabled=false, automationName=UiAutomator2, takesScreenshot=true, javascriptEnabled=true, udid=emulator-5554, platformName=Android, deviceApiLevel=24, deviceManufacturer=unknown, deviceScreenSize=1200x1920, networkConnectionEnabled=true, warnings={}, autoDismissAlerts=true, databaseEnabled=false, appActivity=pegasus.driver.mvvm.auth.AuthActivity, browser_name=Chrome, pixelRatio=2, locationContextEnabled=false, autoGrantPermissions=true, deviceScreenDensity=320, deviceModel=Android SDK built for arm64}]
+Session ID: 92f08f95-98af-4203-8369-fee205e84061
+*** Element info: {Using=xpath, value=pegasus.driver:id/tvMenuTitle}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:99)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at tests.BaseClass.VerifyProfileTitle(BaseClass.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)" name="getResult" is-config="true" duration-ms="16" started-at="2019-11-04T12:36:48Z" finished-at="2019-11-04T12:36:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: VerifyProfileTitle STATUS:FAILURE METHOD:tests.BaseClass.VerifyProfileTitle()]
+]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="teardown()" name="teardown" is-config="true" duration-ms="1" started-at="2019-11-04T12:36:48Z" finished-at="2019-11-04T12:36:48Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="684" started-at="2019-11-04T12:36:48Z" finished-at="2019-11-04T12:36:49Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
